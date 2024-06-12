@@ -362,12 +362,13 @@ body {
 
     .hero-image {
         height: 85vh;
+        background-attachment: scroll;
     }
 
     .hero-text {
         padding: 30px;
-        width: 40vh;
-        height: 40vh;
+        width: 50vh;
+        height: 50vh;
     }
 
     .hero-text h1 {
