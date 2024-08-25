@@ -362,9 +362,11 @@ body {
 }
 
 .locations {
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
     display: flex;
     justify-content: center;
+    max-width: 80%;
+    flex-wrap: wrap;
 }
 
 .locations div {
