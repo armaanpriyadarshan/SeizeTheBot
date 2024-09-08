@@ -70,11 +70,27 @@
                 <p>Uxbridge, MA</p>
             </div>
             <div>
-                <img src="img/locations/bca.jpg" alt="bethany christian academy">
+                <img src="img/locations/bca.jpg" alt="bethany christian academy" data-bs-toggle="modal" data-bs-target="#locationModal" data-bs-title="Bethany Christian Academy Testimonial" data-bs-description="We are so excited for the opportunities Seize the Bot is helping to provide BCA. We haven’t had a robotics program in over a decade and our students are so hungry to learn to code and dive into robotics. We have been eager to improve what STEM offerings we can provide with our budgets😍. We are always striving to keep tuition affordable at BCA and that can mean we have to get creative for materials.   Seize the Bot really helped fill a void: We have 17 students signed up for our first meeting and can’t wait to start!">
                 <h3>Bethany Christian Academy</h3>
                 <p>Mendon, MA</p>
             </div>
+        </div>
         </div>          
+
+        <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="locationModalLabel">Location Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Location Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="footer">
             <img src="img/robot.png" width="100" alt="robot">
             <div>
@@ -87,5 +103,19 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            const modalElement = document.getElementById('locationModal');
+            modalElement.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const title = button.getAttribute('data-bs-title');
+                const description = button.getAttribute('data-bs-description');
+
+                const modalTitle = modalElement.querySelector('.modal-title');
+                const modalBody = modalElement.querySelector('.modal-body p');
+
+                modalTitle.textContent = title;
+                modalBody.textContent = description;
+            });
+        </script>
     </body>
 </html>

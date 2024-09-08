@@ -395,6 +395,26 @@ body {
     color: #112d4e;
 }
 
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-title {
+    font-size: 20px;
+    font-family: Poppins;
+    color: #112d4e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.modal-body {
+    font-size: 16px;
+    font-family: Roboto;
+    color: #112d4e;
+}
+
 @media (max-width: 500px) {
     .navbar {
         margin: 20px 20px;
