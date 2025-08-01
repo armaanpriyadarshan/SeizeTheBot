@@ -925,7 +925,9 @@ body {
     color: #112d4e;
     text-transform: uppercase;
     letter-spacing: 4px;
+    text-decoration: underline;
 }
+
 
 .division {
     margin-bottom: 100px;
@@ -1277,6 +1279,7 @@ body {
     display: none;
 }
 
+
 #gallery {
     max-width: 800px;
     margin: 2rem auto;
@@ -1292,4 +1295,21 @@ body {
 #gallery .carousel-item img {
   border: 10px solid #fefefe;
   border-radius: 20px;
+}
+
+.division h2 {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    color: #fefefe;
+}
+
+.division:nth-of-type(1) h2,
+.division:nth-of-type(2) h2 {
+    background-color: #112d4e;
+}
+
+.division:not(:nth-of-type(1)):not(:nth-of-type(2)) h2 {
+    background-color: #5281b4;
 }
