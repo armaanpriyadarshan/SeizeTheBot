@@ -2066,7 +2066,11 @@ body {
     margin-bottom: 1rem;
     background-color: #112d4e;
     color: #fefefe;
-  }
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
 
 .state-section {
     text-align: center;
