@@ -2090,15 +2090,17 @@ body {
 }
 
 @media (max-width: 500px) {
-  .impact-stats {
-    flex-direction: column;
-    gap: 1.5rem;
+    .impact-stats {
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .impact-box {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
-  .impact-box {
-    width: 90%;
-    margin: 0 auto;
-  }
-}
+  
 
 
 .impact-box h3 {
