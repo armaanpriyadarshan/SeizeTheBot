@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -104,6 +104,244 @@
                 <a href="https://www.linkedin.com/company/seize-the-bot/about/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
             </div>
             <p>seizethebotproject@gmail.com<br>©2024 Seize The Bot</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script>
+            const modalElement = document.getElementById('locationModal');
+            modalElement.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const title = button.getAttribute('data-bs-title');
+                const description = button.getAttribute('data-bs-description');
+
+                const modalTitle = modalElement.querySelector('.modal-title');
+                const modalBody = modalElement.querySelector('.modal-body p');
+
+                modalTitle.textContent = title;
+                modalBody.textContent = description;
+            });
+        </script>
+    </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <title>Our Impact | Seize The Bot</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index#about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index#process">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="impact">Impact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index#help">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:seizethebotproject@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="impact-stats">
+            <div class="impact-box">
+                <h3>19</h3>
+                <p>Schools Donated To</p>
+            </div>
+            <div class="impact-box">
+                <h3>~1000</h3>
+                <p>Kids Reached</p>
+            </div>
+        </div>
+
+        <h1 class="page-header">Locations Impacted</h1> 
+
+            <div class="state-section">
+                <h2>Massachusetts</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/shrewsbury.jpg" alt="shrewsbury public library">
+                        <h3>Shrewsbury Public Library</h3>
+                        <p>Shrewsbury, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/southbridge.jpg" alt="southbridge middle/high school">
+                        <h3>Southbridge Middle School</h3>
+                        <p>Southbridge, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/sturbridge.jpg" alt="old sturbridge academy">
+                        <h3>Old Sturbridge Academy</h3>
+                        <p>Sturbridge, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/rice.jpg" alt="rice square elementary school">
+                        <h3>Rice Square Elementary School</h3>
+                        <p>Worcester, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/whitin.jpg" alt="whitin intermediate school">
+                        <h3>Whitin Intermediate School</h3>
+                        <p>Uxbridge, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/bca.jpg" alt="bethany christian academy">
+                        <h3>Bethany Christian Academy</h3>
+                        <p>Mendon, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/river-valley.jpg" alt="river valley charter school">
+                        <h3>River Valley Charter School</h3>
+                        <p>Newburyport, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/mayo.jpg" alt="mayo elementary school">
+                        <h3>Mayo Elementary School</h3>
+                        <p>Holden, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/abby-kelley.jpg" alt="abby kelley foster">
+                        <h3>Abby Kelley Middle School</h3>
+                        <p>Worcester, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/hilltown.jpg" alt="hilltown charter school">
+                        <h3>Hilltown Charter School</h3>
+                        <p>Easthampton, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/richard.jpg" alt="richard j. murphy school">
+                        <h3>Richard J. Murphy School</h3>
+                        <p>Dorchester, MA</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/francis.jpg" alt="francis w. parker school">
+                        <h3>Francis W. Parker School</h3>
+                        <p>Quincy, MA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h2>Connecticut</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/king-robinson.jpeg" alt="king-robinson magnet school">
+                        <h3>King-Robinson Magnet School</h3>
+                        <p>New Haven, CT</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/foote.jpg" alt="the foote school">
+                        <h3>The Foote School</h3>
+                        <p>New Haven, CT</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/lincoln.jpg" alt="lincoln-bassett school">
+                        <h3>Lincon-Bassett School</h3>
+                        <p>New Haven, CT</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h2>New York</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/justice.jpg" alt="brooklyn school for social justice">
+                        <h3>Brooklyn School for Social Justice</h3>
+                        <p>Brooklyn, NY</p>
+                    </div>
+                    <div>
+                        <img src="img/locations/PS-145.jpg" alt="ps 145 magnet school">
+                        <h3>PS 145 Magnet School</h3>
+                        <p>Brooklyn, NY</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h2>New Jersey</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/ridge-street.jpg" alt="ridge street elementary school">
+                        <h3>Ridge Street Elementary School</h3>
+                        <p>Newark, NJ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h2>New Hampshire</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/pennichuck.jpg" alt="pennichuck middle school">
+                        <h3>Pennichuck Middle School</h3>
+                        <p>Nashua, NH</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="state-section">
+                <h2>Texas</h2>
+                <div class="locations">
+                    <div>
+                        <img src="img/locations/timbers.jpg" alt="timbers elementary school">
+                        <h3>Timbers Elementary School</h3>
+                        <p>Humble, TX</p>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="locationModalLabel">Location Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Location Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="img/robot.png" width="100" alt="robot">
+            <div>
+                <a href="https://www.instagram.com/seizethebot/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://twitter.com/SeizeTheBot/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.linkedin.com/company/seizethebot/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+            <p>seizethebotproject@gmail.com<br>©2025 Seize The Bot</p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
