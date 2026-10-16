@@ -2,3 +2,4 @@ venv
 emails.py
 credentials.json
 token.json
+.DS_Store
